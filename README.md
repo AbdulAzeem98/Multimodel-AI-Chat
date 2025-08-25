@@ -1,4 +1,4 @@
-##Multimodal AI Chat – PDF, YouTube & Video
+#Multimodal AI Chat – PDF, YouTube & Video
 
 A Streamlit app that lets you chat with PDFs, YouTube videos, and local video files using Google Gemini AI and LangChain.
 
