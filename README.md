@@ -78,7 +78,7 @@ A Streamlit-based AI application that allows you to **chat with PDFs**, **ask qu
 
 ## 🏗️ System Architecture
 
-
+```mermaid
 flowchart TD
     A[User Uploads PDF / YouTube / Video]
     A --> B[Extract Text or Transcript or Video Frames]
