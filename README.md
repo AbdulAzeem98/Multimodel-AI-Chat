@@ -80,14 +80,16 @@ A Streamlit-based AI application that allows you to **chat with PDFs**, **ask qu
 
 ```mermaid
 flowchart TD
-    A[User Uploads PDF / YouTube URL / Video] --> B[Extract Text / Transcript / Video Frames]
+    A[User Uploads PDF / YouTube / Video]
+    A --> B[Extract Text or Transcript or Video Frames]
     B --> C[Split Text into Chunks]
-    C --> D[Generate Embeddings with Google Generative AI]
-    D --> E[Store/Load in FAISS Vector Database]
+    C --> D[Generate Embeddings (Gemini)]
+    D --> E[Store in FAISS Vector DB]
     E --> F[User Asks a Question]
     F --> G[Detect & Translate Language]
-    G --> H[Retrieve Relevant Context from FAISS or Analyze Video]
-    H --> I[Gemini Model Generates Answer]
+    G --> H[Retrieve Relevant Context]
+    H --> I[Gemini Generates Answer]
     I --> J[Translate Answer Back]
     J --> K[Convert to Speech (gTTS)]
     K --> L[Display & Play Answer]
+
